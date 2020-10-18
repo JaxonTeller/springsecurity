@@ -1,3 +1,4 @@
+/*
 package com.springsecurity.demo.config;
 
 import lombok.RequiredArgsConstructor;
@@ -18,20 +19,24 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 @RequiredArgsConstructor
 public class UserDetailsSerivceConfig extends WebSecurityConfigurerAdapter {
 
-    /*This will autowire the UserDetailsConfig*/
-    private final UserDetails userDetails;
+    */
+/*This will autowire the UserDetailsConfig*//*
 
-//    @Bean
-//    public UserDetailsService getUserDetails()
-//    {
-//        var userDetailsService=new InMemoryUserDetailsManager(userDetails);
-//        return userDetailsService;
-//    }
+    private final UserDetails userDetails;
 
     @Bean
     public UserDetailsService getUserDetails()
     {
-        /*Using the Spring provided implementation of UserDetails, which is User*/
+        var userDetailsService=new InMemoryUserDetailsManager(userDetails);
+        return userDetailsService;
+    }
+
+    @Bean
+    public UserDetailsService getUserDetails()
+    {
+        */
+/*Using the Spring provided implementation of UserDetails, which is User*//*
+
         UserDetails userDetails = User.withUsername("User").password("Password").authorities("READ").build();
         var userDetailsService=new InMemoryUserDetailsManager(this.userDetails);
         return userDetailsService;
@@ -45,7 +50,9 @@ public class UserDetailsSerivceConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        System.out.println("This config should not get called");
         http.httpBasic();
         http.authorizeRequests().anyRequest().permitAll();
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.springsecurity.demo.config;
 
 import lombok.RequiredArgsConstructor;
@@ -13,7 +14,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
-@Configuration
+//@Configuration
 @RequiredArgsConstructor
 public class ProjectConfig extends WebSecurityConfigurerAdapter {
 
@@ -35,3 +36,4 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().anyRequest().authenticated();
     }
 }
+*/

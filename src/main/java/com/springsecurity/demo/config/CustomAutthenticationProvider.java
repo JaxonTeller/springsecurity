@@ -1,3 +1,4 @@
+/*
 package com.springsecurity.demo.config;
 
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
@@ -35,3 +36,4 @@ public class CustomAutthenticationProvider implements AuthenticationProvider {
                 .isAssignableFrom(aClass);
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.springsecurity.demo.config;
 
 import org.springframework.security.core.GrantedAuthority;
@@ -9,7 +10,9 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-/*This class is an implementation of  UserDetails*/
+*/
+/*This class is an implementation of  UserDetails*//*
+
 @Component
 public class UserDetailsConfig implements UserDetails {
     @Override
@@ -48,3 +51,4 @@ public class UserDetailsConfig implements UserDetails {
         return true;
     }
 }
+*/
